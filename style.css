@@ -1,78 +1,204 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-ul,li,ol{
-    list-style: none;
-}
+/* ul,
+li,
+ol {
+  list-style: none;
+} */
 body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: tomato;
-    width: 100vw;
-    overflow-x: hidden;
+  font-family: sans-serif;
+  background-color: #0f172a;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5vh;
+  overflow-x: hidden;
+  color: rgb(255, 253, 253);
 }
 
 header {
-    margin: 30px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+  display: flex;
+  margin: 30px;
+  flex-direction: column;
+  width: 90%;
+  gap: 20px;
 }
 
 header h1 {
-    color: aliceblue;
-    position: relative;
+  font-size: 3rem;
+  color: aliceblue;
+  position: relative;
 }
-
+.saudacoes {
+  gap: 2vh;
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+}
+.saudacoes p {
+  font-size: 1.5rem;
+}
 header h1::after {
-    content: " ";
-    width: 0%;
-    height: 3px;
-    background-color: white;
-    position: absolute;
-    bottom: 0;
-    border-radius: 10px;
-    left: 0;
-    animation: borda 4s ease forwards;
+  content: " ";
+  width: 0%;
+  height: 3px;
+  background-color: white;
+  position: absolute;
+  bottom: 0;
+  border-radius: 10px;
+  left: 0;
+  animation: borda 4s ease forwards;
 }
 
 @keyframes borda {
-    0% {
-        width: 0%;
-    }
+  0% {
+    width: 0%;
+  }
 
-    100% {
-        width: 100%;
-    }
+  100% {
+    width: 100%;
+  }
 }
 
 header p {
-    color: aliceblue;
+  color: aliceblue;
 }
 
 section {
-    margin-inline: 30px;
-    display: flex;
-    padding: 10px;
-    justify-content: start;
-    align-items: start;
-    height: 80vh;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  width: 90%;
+  height: auto;
 }
-.apresentacao{
-    background-color: rgb(255, 255, 255, 0.7);
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    width: 100%;
-    padding: 5px;
+.apresentacao {
+  background-color: #1e293b;
+  border-radius: 10px;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  text-align: start;
+  padding-block: 100px;
+  padding-inline: 30px;
+  gap: 2vw;
+}
+.sobre {
+  width: 90%;
+}
+.apresentacao p {
+  font-size: 25px;
+  font-weight: 500;
+}
+.info-portifolio {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 2vh;
+  height: 80%;
+  width: 60%;
+}
+.image {
+  width: 25%;
+  display: flex;
+  align-items: start;
+  height: 80%;
+}
+.image img {
+  border-radius: 10px;
+  width: 100%;
+  object-fit: cover;
+}
+.info-portifolio h3 {
+  font-size: 1.8rem;
+}
+.info-portifolio h2 {
+  font-size: 2.3rem;
 }
 
 .descriaco {
+  display: flex;
+  flex-direction: column;
+  height: 95%;
+  justify-content: space-around;
+  background-color: aqua;
+}
+.habilidades {
+  margin-top: 5vh;
+  width: 100%;
+  /* background-color: aqua; */
+  height: 80vh;
+  gap: 3vh;
+  padding-block: 5vh;
+  padding-inline: 5vw;
+  display: flex;
+  flex-direction: column;
+}
+.habilidades h2 {
+  font-size: 2.5rem;
+  position: relative;
+}
+.habilidades h2::after {
+  content: " ";
+  width: 0%;
+  height: 3px;
+  background-color: white;
+  position: absolute;
+  bottom: 0;
+  border-radius: 10px;
+  left: 0;
+  animation: borda 4s ease forwards;
+}
+.info-habilidades {
+  background-color: aquamarine;
+  width: 100%;
+  gap: 2vh;
+  display: grid;
+  height: 100%;
+}
+.liguagem{
+    padding-left: 20px;
+}
+.liguagem h3{
+    font-size: 1.8rem
+}
+.liguagem ul {
+  background-color: blue;
+  display: flex;
+  list-style-type: disc;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3vh;
+  padding: 20px;
+}
+.liguagem ul li {
+  font-size: 1.3rem;
+}
+.liguagem ul li .icon-dev {
+  font-size: 2.5rem;
+}
+/* .liguagem li{
     display: flex;
-    flex-direction: column;
-    height: 95%;
-    justify-content: space-around;
-    background-color: aqua;
+    gap: 0.5vw;
+    align-items: end;
+} */
+.fremeworks {
+  background-color: rgb(236, 137, 31);
+}
+.banco {
+  background-color: black;
+}
+.plataformas {
+  background-color: bisque;
+}
+
+footer{
+    background-color: blue;
+    height: 25vh;
+    width: 100vw;
 }
