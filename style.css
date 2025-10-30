@@ -3,10 +3,15 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 ul,
 li,
 ol {
   list-style: none;
+}
+
+a {
+  text-decoration: none;
 }
 
 body {
@@ -35,15 +40,18 @@ header h1 {
   color: aliceblue;
   position: relative;
 }
+
 .saudacoes {
   gap: 2vh;
   display: flex;
   flex-direction: column;
   text-align: start;
 }
+
 .saudacoes p {
   font-size: 1.5rem;
 }
+
 header h1::after {
   content: " ";
   width: 0%;
@@ -77,6 +85,7 @@ section {
   width: 90%;
   height: auto;
 }
+
 .apresentacao {
   background-color: #1e293b;
   border-radius: 10px;
@@ -89,16 +98,19 @@ section {
   padding-inline: 30px;
   gap: 2vw;
 }
+
 .sobre {
   width: 90%;
 }
+
 .apresentacao p {
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 500;
   display: flex;
   align-items: start;
   justify-content: end;
 }
+
 .info-portifolio {
   display: flex;
   flex-direction: column;
@@ -107,6 +119,7 @@ section {
   height: 80%;
   width: 70%;
 }
+
 .image {
   width: 30%;
   display: flex;
@@ -114,14 +127,17 @@ section {
   align-items: start;
   height: 100%;
 }
+
 .image img {
   border-radius: 10px;
   width: 90%;
   object-fit: cover;
 }
+
 .info-portifolio h3 {
   font-size: 1.8rem;
 }
+
 .info-portifolio h2 {
   font-size: 2.3rem;
 }
@@ -133,10 +149,10 @@ section {
   justify-content: space-around;
   background-color: aqua;
 }
+
 .habilidades {
   margin-top: 5vh;
   width: 100%;
-  /* background-color: aqua; */
   height: auto;
   gap: 3vh;
   padding-block: 5vh;
@@ -144,10 +160,12 @@ section {
   display: flex;
   flex-direction: column;
 }
+
 .habilidades h2 {
   font-size: 2.5rem;
   position: relative;
 }
+
 .habilidades h2::after {
   content: " ";
   width: 0%;
@@ -159,6 +177,7 @@ section {
   left: 0;
   animation: borda 4s ease forwards;
 }
+
 .info-habilidades {
   width: 100%;
   gap: 2vh;
@@ -166,6 +185,16 @@ section {
   flex-wrap: wrap;
   height: 100%;
 }
+
+.liguagem ul li,
+.banco ul li,
+.plataformas ul li,
+.fremeworks ul li {
+  display: flex;
+  gap: 5px;
+  align-items: end;
+}
+
 .liguagem {
   height: 525px;
   width: 480px;
@@ -174,13 +203,16 @@ section {
   padding-left: 20px;
   padding-block: 20px;
 }
+
 .liguagem:hover {
   transform: scale(1.03);
   opacity: 1;
 }
+
 .liguagem h3 {
   font-size: 1.8rem;
 }
+
 .liguagem ul {
   display: flex;
   list-style-type: disc;
@@ -189,9 +221,11 @@ section {
   gap: 3vh;
   padding: 20px;
 }
+
 .liguagem ul li {
   font-size: 1.3rem;
 }
+
 .liguagem ul li .icon-dev {
   font-size: 2.5rem;
 }
@@ -204,13 +238,16 @@ section {
   padding-left: 20px;
   padding-block: 20px;
 }
+
 .fremeworks:hover {
   transform: scale(1.03);
   opacity: 1;
 }
+
 .fremeworks h3 {
   font-size: 1.8rem;
 }
+
 .fremeworks ul {
   display: flex;
   list-style-type: disc;
@@ -219,9 +256,11 @@ section {
   gap: 3vh;
   padding: 20px;
 }
+
 .fremeworks ul li {
   font-size: 1.3rem;
 }
+
 .fremeworks ul li .icon-dev {
   font-size: 2.5rem;
 }
@@ -234,13 +273,16 @@ section {
   padding-left: 20px;
   padding-block: 20px;
 }
+
 .banco:hover {
   transform: scale(1.03);
   opacity: 1;
 }
+
 .banco h3 {
   font-size: 1.8rem;
 }
+
 .banco ul {
   display: flex;
   list-style-type: disc;
@@ -249,9 +291,11 @@ section {
   gap: 3vh;
   padding: 20px;
 }
+
 .banco ul li {
   font-size: 1.3rem;
 }
+
 .banco ul li .icon-dev {
   font-size: 2.5rem;
 }
@@ -264,13 +308,16 @@ section {
   padding-left: 20px;
   padding-block: 20px;
 }
+
 .plataformas:hover {
   transform: scale(1.03);
   opacity: 1;
 }
+
 .plataformas h3 {
   font-size: 1.8rem;
 }
+
 .plataformas ul {
   display: flex;
   list-style-type: disc;
@@ -279,9 +326,11 @@ section {
   gap: 3vh;
   padding: 20px;
 }
+
 .plataformas ul li {
   font-size: 1.3rem;
 }
+
 .plataformas ul li .icon-dev {
   font-size: 2.5rem;
 }
@@ -296,10 +345,12 @@ section {
   display: flex;
   flex-direction: column;
 }
+
 .projetos h2 {
   font-size: 2.5rem;
   position: relative;
 }
+
 .projetos h2::after {
   content: " ";
   width: 0%;
@@ -311,6 +362,7 @@ section {
   left: 0;
   animation: borda 4s ease forwards;
 }
+
 .info-projetos {
   width: 100%;
   display: flex;
@@ -319,6 +371,7 @@ section {
   gap: 2vw;
   /* height: 100%; */
 }
+
 .card {
   height: 525px;
   width: 480px;
@@ -327,10 +380,12 @@ section {
   border-radius: 10px;
   background-color: #2a3f5f;
 }
+
 .card:hover {
   transform: scale(1.03);
   opacity: 1;
 }
+
 .imagePro {
   height: 40%;
   width: 100%;
@@ -341,11 +396,13 @@ section {
   border-top-right-radius: 10px;
   background-color: white;
 }
+
 .imagePro img {
   border-radius: 10px;
   width: 100%;
   object-fit: contain;
 }
+
 .info-card {
   display: flex;
   flex-direction: column;
@@ -356,11 +413,13 @@ section {
   border-bottom-right-radius: 10px;
   padding: 15px;
 }
+
 .info-card ul {
   display: flex;
   gap: 1vh;
   flex-direction: column;
 }
+
 .formacao {
   margin-top: 5vh;
   width: 100%;
@@ -371,10 +430,12 @@ section {
   display: flex;
   flex-direction: column;
 }
+
 .formacao h2 {
   font-size: 2.5rem;
   position: relative;
 }
+
 .formacao h2::after {
   content: " ";
   width: 0%;
@@ -389,17 +450,390 @@ section {
 
 footer {
   background-color: #1e293b;
-  height: 25vh;
-  width: 100vw;
+  height: 30vh;
+  width: 100%;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  padding-left: 5%;
+  padding-top: 3%;
+  /* justify-content: center;
+  align-items: center; */
 }
+
 .contato {
   display: flex;
   gap: 2vh;
   flex-direction: column;
 }
-footer h2 {
-  font-size: 2.5rem;
+
+.contato ul {
+  display: flex;
+  flex-direction: column;
+  gap: 3vh;
+}
+
+.contato h2 {
+  font-size: 2rem;
+}
+
+.contato ul li a {
+  color: white;
+}
+
+@media (max-width: 1620px) {
+  header h1 {
+    font-size: 2.5rem;
+  }
+
+  .apresentacao {
+    padding-block: 70px;
+  }
+
+  .apresentacao p {
+    font-size: 1.2rem;
+  }
+
+  .info-portifolio h2 {
+    font-size: 1.8rem;
+  }
+
+  .info-portifolio h3 {
+    font-size: 1.5rem;
+  }
+
+  .contato h2 {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 1300px) {
+
+  .info-habilidades {
+    gap: 3vw;
+  }
+
+  .info-projetos {
+    gap: 3vw;
+  }
+
+  .apresentacao p {
+    font-size: 0.9rem;
+  }
+
+  .info-portifolio {
+    gap: 2vh;
+  }
+
+  .info-portifolio h3 {
+    font-size: 1.4rem;
+  }
+
+
+  .liguagem {
+    height: 405px;
+    width: 380px;
+  }
+
+  .liguagem h3 {
+    font-size: 1.3rem;
+  }
+
+  .liguagem ul {
+    gap: 2vh;
+  }
+
+  .liguagem ul li .icon-dev {
+    font-size: 2rem;
+  }
+
+  .liguagem ul li {
+    font-size: 1rem;
+  }
+
+  .banco {
+    height: 405px;
+    width: 380px;
+  }
+
+  .banco h3 {
+    font-size: 1.3rem;
+  }
+
+  .banco ul {
+    gap: 2vh;
+  }
+
+  .banco ul li .icon-dev {
+    font-size: 2rem;
+  }
+
+  .banco ul li {
+    font-size: 1rem;
+  }
+
+  .fremeworks {
+    height: 405px;
+    width: 380px;
+  }
+
+  .fremeworks h3 {
+    font-size: 1.3rem;
+  }
+
+  .fremeworks ul {
+    gap: 2vh;
+  }
+
+  .fremeworks ul li .icon-dev {
+    font-size: 2rem;
+  }
+
+  .fremeworks ul li {
+    font-size: 1rem;
+  }
+
+  .plataformas {
+    height: 405px;
+    width: 380px;
+  }
+
+  .plataformas h3 {
+    font-size: 1.3rem;
+  }
+
+  .plataformas ul {
+    gap: 2vh;
+  }
+
+  .plataformas ul li .icon-dev {
+    font-size: 2rem;
+  }
+
+  .plataformas ul li {
+    font-size: 1rem;
+  }
+
+  .card {
+    height: 405px;
+    width: 380px;
+  }
+
+  .info-card {
+    font-size: 0.8rem;
+  }
+
+  .info-portifolio h2 {
+    font-size: 1.7rem;
+  }
+
+  .habilidades h2 {
+    font-size: 1.8rem;
+  }
+
+  .projetos h2 {
+    font-size: 1.8rem;
+  }
+
+  .formacao h2 {
+    font-size: 1.8rem;
+  }
+
+
+}
+
+@media (max-width: 1080px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  .apresentacao {
+    padding-block: 40px;
+  }
+
+  .card {
+    height: 375px;
+    width: 330px;
+  }
+
+  .info-card {
+    font-size: 0.7rem;
+  }
+
+  .apresentacao p {
+    font-size: 0.7rem;
+  }
+
+  .info-portifolio h2 {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 830px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  .apresentacao p {
+    font-size: 0.5rem;
+  }
+
+  .info-portifolio h3 {
+    font-size: 0.8rem;
+  }
+
+  .info-portifolio h2 {
+    font-size: 1rem;
+  }
+
+  .habilidades h2 {
+    font-size: 1.3rem;
+  }
+
+  .liguagem {
+    height: 265px;
+    width: 250px;
+  }
+
+  .liguagem h3 {
+    font-size: 1rem;
+  }
+
+  .liguagem ul li .icon-dev {
+    font-size: 1.5rem;
+  }
+
+  .liguagem ul li {
+    font-size: 0.9rem;
+  }
+
+  .fremeworks {
+    height: 265px;
+    width: 250px;
+  }
+
+  .fremeworks h3 {
+    font-size: 1rem;
+  }
+
+  .fremeworks ul {
+    gap: 2vh;
+  }
+
+  .fremeworks ul li .icon-dev {
+    font-size: 1.5rem;
+  }
+
+  .fremeworks ul li {
+    font-size: 0.9rem;
+  }
+
+  .banco {
+    height: 265px;
+    width: 250px;
+  }
+
+  .banco h3 {
+    font-size: 1rem;
+  }
+
+  .banco ul {
+    gap: 2vh;
+  }
+
+  .banco ul li .icon-dev {
+    font-size: 1.5rem;
+  }
+
+  .banco ul li {
+    font-size: 0.9rem;
+  }
+
+  .plataformas {
+    height: 265px;
+    width: 250px;
+  }
+
+  .plataformas h3 {
+    font-size: 1rem;
+  }
+
+  .plataformas ul {
+    gap: 2vh;
+  }
+
+  .plataformas ul li .icon-dev {
+    font-size: 1.5rem;
+  }
+
+  .plataformas ul li {
+    font-size: 0.9rem;
+  }
+
+  .projetos h2 {
+    font-size: 1.3rem;
+  }
+
+  .info-projetos {
+    gap: 4vw;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .card {
+    height: 265px;
+    width: 250px;
+  }
+
+  .info-card {
+    justify-content: center;
+    font-size: 0.570rem;
+  }
+
+  .info-habilidades {
+    gap: 4vw;
+    justify-content: center;
+  }
+
+  .formacao h2 {
+    font-size: 1.3rem;
+  }
+
+  .info-formacao {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .contato h2 {
+    font-size: 1.3rem;
+  }
+  .contato ul li{
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 620px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  .apresentacao {
+    padding-block: 20px;
+  }
+
+  .apresentacao p {
+    font-size: 0.470rem;
+  }
+
+  .info-portifolio h2 {
+    font-size: 0.8rem;
+  }
+
+  .info-portifolio h3 {
+    font-size: 0.6rem;
+  }
+
+  .contato h2 {
+    font-size: 1.8rem;
+  }
 }
