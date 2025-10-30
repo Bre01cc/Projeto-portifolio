@@ -49,7 +49,7 @@ header h1 {
 }
 
 .saudacoes p {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
 }
 
 header h1::after {
@@ -104,7 +104,7 @@ section {
 }
 
 .apresentacao p {
-  font-size: 20px;
+  font-size: 1.5rem;
   font-weight: 500;
   display: flex;
   align-items: start;
@@ -115,7 +115,7 @@ section {
   display: flex;
   flex-direction: column;
   align-items: start;
-  gap: 2vh;
+  gap: 4vh;
   height: 80%;
   width: 70%;
 }
@@ -135,11 +135,11 @@ section {
 }
 
 .info-portifolio h3 {
-  font-size: 1.8rem;
+  font-size: 1.9rem;
 }
 
 .info-portifolio h2 {
-  font-size: 2.3rem;
+  font-size: 2.5rem;
 }
 
 .descriaco {
@@ -447,6 +447,11 @@ section {
   left: 0;
   animation: borda 4s ease forwards;
 }
+.info-formacao {
+  display: flex;
+  gap: 2vw;
+  flex-wrap: wrap;
+}
 
 footer {
   background-color: #1e293b;
@@ -472,10 +477,11 @@ footer {
 }
 
 .contato h2 {
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 
 .contato ul li a {
+  font-size: 1.5rem;
   color: white;
 }
 
@@ -506,7 +512,6 @@ footer {
 }
 
 @media (max-width: 1300px) {
-
   .info-habilidades {
     gap: 3vw;
   }
@@ -526,7 +531,6 @@ footer {
   .info-portifolio h3 {
     font-size: 1.4rem;
   }
-
 
   .liguagem {
     height: 405px;
@@ -636,8 +640,6 @@ footer {
   .formacao h2 {
     font-size: 1.8rem;
   }
-
-
 }
 
 @media (max-width: 1080px) {
@@ -785,7 +787,7 @@ footer {
 
   .info-card {
     justify-content: center;
-    font-size: 0.570rem;
+    font-size: 0.57rem;
   }
 
   .info-habilidades {
@@ -807,33 +809,53 @@ footer {
   .contato h2 {
     font-size: 1.3rem;
   }
-  .contato ul li{
+  .contato ul li {
     font-size: 0.9rem;
   }
 }
 
 @media (max-width: 620px) {
+  .projetos h2 {
+    font-size: 1.1rem;
+  }
+  .habilidades h2 {
+    font-size: 1.1rem;
+  }
   header h1 {
     font-size: 1.5rem;
   }
 
   .apresentacao {
+    flex-direction: column-reverse;
     padding-block: 20px;
+    gap: 4vh;
+  }
+  .info-portifolio {
+    width: 100%;
+  }
+  .image {
+    width: 60%;
   }
 
   .apresentacao p {
-    font-size: 0.470rem;
+    font-size: 0.7rem;
   }
 
   .info-portifolio h2 {
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
 
   .info-portifolio h3 {
-    font-size: 0.6rem;
+    font-size: 0.8rem;
   }
 
   .contato h2 {
-    font-size: 1.8rem;
+    font-size: 1.2rem;
   }
+  .contato ul li a {
+    font-size: 0.7rem;
+  }
+  .contato ul {
+    gap: 1.5vh;
+}
 }
